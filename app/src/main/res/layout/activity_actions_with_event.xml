@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActionsWithEvent">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Действия с событием"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eventIdEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ID события"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <EditText
+        android:id="@+id/eventNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Новое название события"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventIdEditText" />
+
+    <EditText
+        android:id="@+id/eventTimeEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Новое время события"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventNameEditText" />
+
+    <EditText
+        android:id="@+id/imageLinkEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Новая ссылка на изображение"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventTimeEditText" />
+
+    <Button
+        android:id="@+id/updateEventButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Обновить"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLinkEditText" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateEventButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
